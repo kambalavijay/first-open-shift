@@ -20,11 +20,6 @@ public class FistOpenShiftApplication {
 		return "Welcome " + user;
 	}
 
-	@GetMapping("/{user}")
-	public String wishBirthdayToUser(@PathVariable String user){
-		return "Happy birthday " + user;
-	}
-
 	public static void main(String[] args) {
 
 		SpringApplication.run(FistOpenShiftApplication.class, args);
